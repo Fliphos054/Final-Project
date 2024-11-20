@@ -20,8 +20,61 @@
 
     <main>
       <h2>Community Forum</h2>
+      
       <section class="forum">
-        <!-- Forum Categories and Threads -->
+        <h3>Forum Categories</h3>
+        <ul class="forum-categories">
+          <li><a href="#action">Action Manga</a></li>
+          <li><a href="#romance">Romance Manga</a></li>
+          <li><a href="#adventure">Adventure Manga</a></li>
+          <li><a href="#fantasy">Fantasy Manga</a></li>
+        </ul>
+
+        <div class="forum-thread" id="action">
+          <h4>Action Manga Discussion</h4>
+          <div class="thread-posts">
+            <div class="post">
+              <p><strong>User1:</strong> I love the latest action manga release! The artwork is stunning!</p>
+              <form action="#" method="post" class="reply-form">
+                <textarea name="reply" rows="3" placeholder="Add a reply..."></textarea>
+                <button type="submit">Post Reply</button>
+              </form>
+            </div>
+            <div class="post">
+              <p><strong>User2:</strong> Totally agree! The fight scenes are next level.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="forum-thread" id="romance">
+          <h4>Romance Manga Discussion</h4>
+          <div class="thread-posts">
+            <div class="post">
+              <p><strong>User3:</strong> This romance manga made me cry! Anyone else felt the same?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="create-thread">
+          <h4>Create a New Thread</h4>
+          <form action="#" method="post" id="create-thread-form">
+            <label for="category">Select Category:</label>
+            <select name="category" id="category">
+              <option value="action">Action</option>
+              <option value="romance">Romance</option>
+              <option value="adventure">Adventure</option>
+              <option value="fantasy">Fantasy</option>
+            </select>
+
+            <label for="title">Thread Title:</label>
+            <input type="text" name="title" id="title" placeholder="Enter thread title" required />
+
+            <label for="content">Thread Content:</label>
+            <textarea name="content" id="content" rows="5" placeholder="Start your discussion..." required></textarea>
+
+            <button type="submit">Create Thread</button>
+          </form>
+        </div>
       </section>
     </main>
 
